@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BotanitApp.LoginPage">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="20">
+            <Image Source="botanita.jpg"
+                   HorizontalOptions="Center" 
+                   HeightRequest="150" Aspect="AspectFit"/>
+            <StackLayout >
+                <!--<Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Image Source="botanita.jpg" 
+                               HorizontalOptions="Center"
+                               HeightRequest="50"/>
+                    </Grid>
+                </Grid>-->
+            </StackLayout>
+            <Label Text="Introduce tu número de alumno" TextColor="Black" />
+            <Entry x:Name="UsuarioEntry" Placeholder="P. Ej. 1737"  Keyboard="Email" />
+            <Button x:Name="ButtonBoton" 
+                    Clicked="ButtonBoton_Clicked"
+                    Text="Iniciar"
+                    TextColor="White" 
+                    BackgroundColor="#f1c40f" 
+                    CornerRadius="25"/>
+            <!--<Button BackgroundColor="WhiteSmoke" TextColor="Black" Text="Siguiente" Command="{Binding LoginCommand}" IsEnabled="{Binding IsEntryEnable}"/>-->
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
