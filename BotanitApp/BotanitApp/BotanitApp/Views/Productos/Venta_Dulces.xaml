@@ -3,42 +3,169 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              BackgroundColor="#aab7b8"
+             Title="Dulces"
              x:Class="BotanitApp.Venta_Dulces">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
+            <StackLayout Padding="18">
 
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition 
                             Height="Auto"/>
                     </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition 
+                            Width="*"/>
+                        <ColumnDefinition 
+                            Width="*"/>
+                    </Grid.ColumnDefinitions>
                     <controls:CircleImage
                         Grid.Row="0" 
-                        HeightRequest="200"
+                        HeightRequest="100"
                         Grid.Column="0"
                         HorizontalOptions="Center"
                         Source="img_mujer.jpg" />
-
                     <Grid Grid.Row="0"
                       Grid.Column="1">
+
+                                            <StackLayout>
+                                                <Label 
+                                                    Text="Nombre: Jovana Méndez Ibarra" 
+                                                    FontAttributes="Bold"/>
+                                                <Label 
+                                                    Text="Estado: Activo" 
+                                                    FontAttributes="Italic"/>
+                                            </StackLayout>
+                                                                                <!--<Image
+                                                                                    Source="activo.png"
+                                                                                    WidthRequest="10"
+                                                                                    HeightRequest="10"
+                                                                                    Grid.Row="0"
+                                                                                    Grid.Column="2"/>-->
+                    </Grid>
+                    <StackLayout Grid.Row="1" HorizontalOptions="Center" Orientation="Horizontal">
+                        <Button Text="Llamar"/>
+                        <Button Text="Mensaje"/>
+                    </StackLayout>
+                </Grid>
+
+                <Grid BackgroundColor=" #f4f6f6 " Padding="15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
                         <StackLayout>
-                            <Label 
-                                Text="Nombre: Yovana" 
-                                FontAttributes="Bold"/>
-                            <Label 
-                                Text="Estado: Activo" 
-                                FontAttributes="Italic"/>
+                            <Image x:Name="d1" Source="du.jpg" HeightRequest="130"/>
+                            <Label Text="Bomba Sandia" FontAttributes="Bold" FontSize="Small" HorizontalOptions="Center"/>
+                            <Label Text="$2.00" FontSize="Small" HorizontalOptions="Center"/>
                         </StackLayout>
-                        <Image
-                            Source="activo.png"
-                            HeightRequest="25"
-                            Grid.Row="0"
-                            Grid.Column="2"/>
+                    </Grid>
+
+                    <Grid Grid.Row="0" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout>
+                            <Image x:Name="d2" Source="dul.jpg" HeightRequest="130"/>
+                            <Label Text="Mumbino" FontSize="Small" FontAttributes="Bold" HorizontalOptions="Center"/>
+                            <Label Text="1pz x $6.00 o 2pz x $10.00" FontSize="Small" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid Grid.Row="1" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout>
+                            <Image x:Name="d3" Source="dulc.jpg" HeightRequest="130"/>
+                            <Label Text="Paleta cucharra" FontAttributes="Bold" FontSize="Small" HorizontalOptions="Center"/>
+                            <Label Text="$4.00" FontSize="Small" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid Grid.Row="1" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout>
+                            <Image x:Name="d4" Source="dulce.jpg" HeightRequest="130"/>
+                            <Label Text="Nikolo" FontSize="Small" HorizontalOptions="Center"/>
+                            <Label Text="1pz x $6.00 o 2pz x $10.00" FontSize="Small" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid Grid.Row="2" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout>
+                            <Image x:Name="d5" Source="dulcee.jpg" HeightRequest="130"/>
+                            <Label Text="Indy" FontAttributes="Bold" FontSize="Small" HorizontalOptions="Center"/>
+                            <Label Text="$2.00" FontSize="Small" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid Grid.Row="2" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout>
+                            <Image x:Name="d6" Source="dulceess.jpg" HeightRequest="130"/>
+                            <Label Text="Bubu Lubu" FontSize="Small" FontAttributes="Bold" HorizontalOptions="Center"/>
+                            <Label Text="1pz x $4.00 o 3pz x $12" FontSize="Small" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid Grid.Row="3" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout>
+                            <Image x:Name="d7" Source="dulces.jpg" HeightRequest="130"/>
+                            <Label Text="Heladitos" FontSize="Small" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid Grid.Row="3" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout>
+                            <Image x:Name="d8" Source="dulcess.jpg" HeightRequest="130"/>
+                            <Label Text="Lucas Muecas" FontAttributes="Bold" FontSize="Small" HorizontalOptions="Center"/>
+                            <Label Text="$8.00"  FontSize="Small" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid Grid.Row="4" Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout>
+                            <Image x:Name="d9" Source="dulcesss.jpg" HeightRequest="130"/>
+                            <Label Text="Halls" FontSize="Small" HorizontalOptions="Center"/>
+                            <Label Text="$8.00" FontSize="Small" HorizontalOptions="Center"/>
+                        </StackLayout>
+                    </Grid>
+
+                    <Grid Grid.Row="4" Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout>
+                            <Image x:Name="d10" Source="dulcessss.jpg" HeightRequest="130"/>
+                            <Label Text="Nugs" FontSize="Small" FontAttributes="Bold" HorizontalOptions="Center"/>
+                            <Label Text="1pz x $3.00 o 4pz x $10.00" FontSize="Small" HorizontalOptions="Center"/>
+                        </StackLayout>
                     </Grid>
                 </Grid>
-                <BoxView BackgroundColor="Blue"/>
-                <BoxView BackgroundColor="Blue"/>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
