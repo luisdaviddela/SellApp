@@ -15,6 +15,31 @@ namespace BotanitApp
 		public InicioView ()
 		{
 			InitializeComponent ();
-		}
+
+            var dulcess = new TapGestureRecognizer();
+            dulcess.Tapped += (s, e) => {
+                Navigation.PushAsync(new Venta_Dulces());
+            };
+            dulces.GestureRecognizers.Add(dulcess);
+
+            var antojitoss = new TapGestureRecognizer();
+            antojitoss.Tapped += (s, e) => {
+                Navigation.PushAsync(new Venta_Antojitos());
+            };
+            antojitos.GestureRecognizers.Add(antojitoss);
+
+            var heladitoss = new TapGestureRecognizer();
+            heladitoss.Tapped += (s, e) => {
+                Navigation.PushAsync(new Venta_Heladitos());
+            };
+            heladitos.GestureRecognizers.Add(heladitoss);
+
+            var comidas = new TapGestureRecognizer();
+            comidas.Tapped += (s, e) => {
+                Navigation.PushAsync(new Venta_Comida());
+            };
+            comida.GestureRecognizers.Add(comidas);
+
+        }
 	}
 }
