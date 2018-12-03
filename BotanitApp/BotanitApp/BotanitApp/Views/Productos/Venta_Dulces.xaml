@@ -45,7 +45,7 @@
                                                                                     Grid.Column="2"/>-->
                     </Grid>
                     <StackLayout Grid.Row="1" HorizontalOptions="Center" Orientation="Horizontal">
-                        <Button Text="Llamar"/>
+                        <Button Text="Llamar" Clicked="Button_Clicked"/>
                         <Button Text="Mensaje"/>
                     </StackLayout>
                 </Grid>

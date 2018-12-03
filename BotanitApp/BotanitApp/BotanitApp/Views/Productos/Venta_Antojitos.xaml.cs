@@ -14,7 +14,28 @@ namespace BotanitApp
 	{
 		public Venta_Antojitos ()
 		{
-			InitializeComponent ();
-		}
-	}
+			InitializeComponent (); var dd1 = new TapGestureRecognizer();
+            dd1.Tapped += (s, e) => {
+                GoVentas();
+            };
+            d1.GestureRecognizers.Add(dd1);
+        }
+        public void GoVentas()
+        {
+            Navigation.PushAsync(new VentasView());
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Device.OpenUri(new Uri("tel:8332350543"));
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+    }
 }
