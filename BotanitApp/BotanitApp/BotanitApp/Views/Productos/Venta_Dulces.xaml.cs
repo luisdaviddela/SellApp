@@ -87,7 +87,7 @@ namespace BotanitApp
         {
             try
             {
-                Device.OpenUri(new Uri("tel:8332350543"));
+                Device.OpenUri(new Uri("tel:528333335108"));
             }
             catch (Exception)
             {

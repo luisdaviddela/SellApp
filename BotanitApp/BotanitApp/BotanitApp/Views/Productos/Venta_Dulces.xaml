@@ -127,8 +127,9 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         <StackLayout>
-                            <Image x:Name="d7" Source="dulces.jpg" HeightRequest="130"/>
-                            <Label Text="Heladitos" FontSize="Small" HorizontalOptions="Center"/>
+                            <Image x:Name="d7" Source="maza.jpg" HeightRequest="130"/>
+                            <Label Text="Mazapán" FontSize="Small" HorizontalOptions="Center"/>
+                            <Label Text="1pz x $5.00 o 3pz x $13" FontSize="Small" HorizontalOptions="Center"/>
                         </StackLayout>
                     </Grid>
 
