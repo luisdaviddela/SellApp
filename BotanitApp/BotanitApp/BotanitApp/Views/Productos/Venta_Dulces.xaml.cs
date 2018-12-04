@@ -16,7 +16,7 @@ namespace BotanitApp
 		{
 			InitializeComponent ();
 
-
+            #region
             var dd1 = new TapGestureRecognizer();
             dd1.Tapped += (s, e) => {
                 GoVentas();
@@ -76,6 +76,18 @@ namespace BotanitApp
                 GoVentas();
             };
             d10.GestureRecognizers.Add(dd10);
+            #endregion
+            var ActivoSesion = Application.Current.Properties["IsActivo"];
+            bool Activo = Convert.ToBoolean(ActivoSesion);
+
+            if (Activo)
+            {
+                Act.Text = "Estatus= Activo";
+            }
+            else
+            {
+                Act.Text = "Estatus= Inctivo";
+            }
         }
 
         public void GoVentas()

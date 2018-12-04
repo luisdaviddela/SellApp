@@ -16,6 +16,8 @@ namespace BotanitApp
 		{
 			InitializeComponent ();
 
+            #region
+
             var dulcess = new TapGestureRecognizer();
             dulcess.Tapped += (s, e) => {
                 Navigation.PushAsync(new Venta_Dulces());
@@ -39,7 +41,12 @@ namespace BotanitApp
                 Navigation.PushAsync(new Venta_Comida());
             };
             comida.GestureRecognizers.Add(comidas);
+            #endregion
 
+            if (Application.Current.Properties.ContainsKey("IsActivo")==false)
+            {
+                Application.Current.Properties["IsActivo"] = true;
+            }
         }
 	}
 }

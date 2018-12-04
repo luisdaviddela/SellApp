@@ -15,17 +15,21 @@ namespace BotanitApp
 		public MiPerfil ()
 		{
 			InitializeComponent ();
-		}
+            var ActivoSesion = Application.Current.Properties["IsActivo"];
+            bool Activo = Convert.ToBoolean(ActivoSesion);
+
+            SwV.IsToggled= Activo;
+        }
 
         private void Switch_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             if (SwV.IsToggled== true)
             {
-                DisplayAlert("ds","false","d");
+                Application.Current.Properties["IsActivo"]= true;
             }
             else
             {
-                DisplayAlert("ds", "true", "d");
+                Application.Current.Properties["IsActivo"] = false;
             }
         }
     }

@@ -19,6 +19,10 @@
             <Label x:Name="cantidad" 
                    HorizontalOptions="Center" 
                    FontSize="Medium"/>
+            <Label Text="Seleccionar edificio"
+                   HorizontalOptions="Center" 
+                   FontSize="Medium"/>
+            <Picker x:Name="pickedificios"/>
 
             <Button Text="Comprar/Apartar" Clicked="Button_Clicked"/>
         </StackLayout>

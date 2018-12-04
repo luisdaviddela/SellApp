@@ -15,6 +15,10 @@ namespace BotanitApp
         public VentasView()
         {
             InitializeComponent();
+            pickedificios.Items.Add("A");
+            pickedificios.Items.Add("B");
+            pickedificios.Items.Add("C");
+            pickedificios.Items.Add("D");
         }
         int count = 0;
 

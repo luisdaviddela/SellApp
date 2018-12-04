@@ -34,7 +34,7 @@
                                                     Text="Nombre: Jovana Méndez Ibarra" 
                                                     FontAttributes="Bold"/>
                                                 <Label 
-                                                    Text="Estado: Activo" 
+                                                    x:Name="Act" 
                                                     FontAttributes="Italic"/>
                                             </StackLayout>
                                                                                 <!--<Image

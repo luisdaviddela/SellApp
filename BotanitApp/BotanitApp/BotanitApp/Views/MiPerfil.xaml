@@ -16,7 +16,22 @@
 
             <Label Text="Estado"
                    FontAttributes="Bold"/>
-            <Switch x:Name="SwV" PropertyChanged="Switch_PropertyChanged"/>
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="No" 
+                       Grid.Row="0"
+                       Grid.Column="0"/>
+                <Switch x:Name="SwV" 
+                        PropertyChanged="Switch_PropertyChanged"
+                        Grid.Row="0"
+                       Grid.Column="1"/>
+                <Label Text="Si"
+                       Grid.Row="0"
+                       Grid.Column="2"/>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
