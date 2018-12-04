@@ -16,5 +16,17 @@ namespace BotanitApp
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void Switch_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            if (SwV.IsToggled== true)
+            {
+                DisplayAlert("ds","false","d");
+            }
+            else
+            {
+                DisplayAlert("ds", "true", "d");
+            }
+        }
+    }
 }

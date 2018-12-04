@@ -23,6 +23,7 @@ namespace BotanitApp
             List<Menu> menu = new List<Menu>
             {
                 new Menu{ Page= new MiPerfil(),MenuTitle="Jovana.",  MenuDetail="Mi perfil",icon="botanita.jpg"},
+                new Menu{ Page= new InicioView(),MenuTitle="Inicio.",  MenuDetail="",icon="botanita.jpg"},
             };
             ListMenu.ItemsSource = menu;
         }
